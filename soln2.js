@@ -3,7 +3,7 @@
 const speed = 80;
 
 const speedLimit = 70;
-let points = 1;
+let points = 0;
 
 // Check if the speed is within the limit
 if (speed < speedLimit) {
@@ -19,3 +19,8 @@ if (speed < speedLimit) {
     console.log(`Points: ${points}`);
   }
 }
+
+// Example usage:
+checkSpeed(80); // Should print "Points: 2"
+checkSpeed(65); // Should print "Ok"
+checkSpeed(135); // Should print "License suspended"
